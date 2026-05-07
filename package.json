@@ -1,0 +1,19 @@
+{
+  "name": "prevu",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.12",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "bun run --filter @prevu/cli build",
+    "typecheck": "bun run --filter @prevu/cli typecheck",
+    "test": "bun run --filter @prevu/cli test"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

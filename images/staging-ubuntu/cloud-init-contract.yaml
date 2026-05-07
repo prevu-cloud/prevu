@@ -1,0 +1,22 @@
+#cloud-config
+package_update: true
+packages:
+  - ca-certificates
+  - curl
+  - git
+  - jq
+  - unzip
+  - build-essential
+  - docker.io
+  - docker-compose-v2
+  - python3
+  - python3-pip
+  - golang-go
+runcmd:
+  - mkdir -p /workspace /opt/prevu /var/log/prevu
+  - chown -R prevu:prevu /workspace /opt/prevu /var/log/prevu
+  - systemctl enable --now ssh || systemctl enable --now sshd
+  - systemctl enable --now docker
+  - usermod -aG docker prevu
+  - curl -fsSL https://bun.sh/install | sudo -u prevu bash
+  - touch /opt/prevu/provisioned

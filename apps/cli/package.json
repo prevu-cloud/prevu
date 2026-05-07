@@ -1,0 +1,38 @@
+{
+  "name": "@prevu/cli",
+  "version": "0.2.3",
+  "description": "Command-line interface for Prevu - staging environments for coding agents.",
+  "homepage": "https://prevu.cloud",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prevu-cloud/prevu.git",
+    "directory": "apps/cli"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "prevu": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "bun build.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "bun test",
+    "prevu": "bun src/index.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.19.25"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@prevu/skills",
+  "version": "0.3.3",
+  "description": "Agent skills for Prevu - install with `npx skills sync` to teach Claude Code, Cursor, etc. how to drive the Prevu CLI.",
+  "homepage": "https://prevu.cloud",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prevu-cloud/prevu.git",
+    "directory": "packages/skills"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "agent",
+    "claude-code",
+    "cursor",
+    "prevu"
+  ],
+  "files": [
+    "skills",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
