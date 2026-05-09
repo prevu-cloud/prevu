@@ -65,14 +65,23 @@ npx skills add prevu-cloud/prevu -a claude-code
 
 | Site | URL | Method | Status | Notes |
 | --- | --- | --- | --- | --- |
-| SkillsMD | https://skillsmd.dev | Web form | Pending | Direct submit form accepts repo, skill name, description, optional email. |
-| askill | https://askill.sh/submit | Web form | Pending | Direct submit form accepts GitHub URL. |
-| SkillKit | https://skillkit.io/submit | Web form | Pending | Direct submit form accepts GitHub repository URL. |
-| Skillery | https://skillery.dev/submit | GitHub sign-in | Blocked on account session | Requires GitHub sign-in in browser. |
-| Open Agent Skills | https://openagentskills.dev | GitHub/email | Pending | Site asks for GitHub repository contribution; contact available. |
+| Awesome Skills Directory | https://www.awesomeskills.dev/en/skill/prevu-prevu | Web form | Live | `prevu` indexed successfully. |
+| AgentSkills.in | https://agentskills.in | Web form | Live | Submitted `prevu-cloud/prevu`; site reported 4 indexed skills. |
+| SkillKit | https://skillkit.io/submit | Web form | Submitted | Review queue accepted `https://github.com/prevu-cloud/prevu`. |
+| Skills.re | https://skills.re/submit | Web form | Queued | Submitted root `skills/prevu` and `skills/prevu-flows`; job `skills-upload-2a83a645-d7e2-46f5-9aae-081cc515b307`. |
+| forAgents.dev | https://foragents.dev | API submission | Submitted | Pending review as `fbdaffce-b3ea-4b7a-9eab-a3a8787da0e0`. |
+| AbsolutelySkilled | https://github.com/AbsolutelySkilled/AbsolutelySkilled/pull/6 | GitHub PR | Submitted | Adds `prevu-preview-environments` skill. |
+| block/agent-skills | https://github.com/block/agent-skills/pull/34 | GitHub PR | Submitted | Adds `prevu-preview-environments` skill for Goose-style agent skills. |
+| AgenticSkills | https://agenticskills.io/submit | Web form | Blocked by site config | Full form submitted, but the page returned `Submission review queue is not configured.` |
+| agentskill.sh | https://agentskill.sh/submit | Repo import | Rate-limited | Repo import attempted; page returned `Too many submissions. Please try again in an hour.` Google sign-in was not authorized. |
+| SkillsMD | https://skillsmd.dev | Web form + API | Blocked by site lookup | Form and direct API both returned `GitHub repo not found: prevu-cloud/prevu`, despite GitHub API returning 200. |
+| askill | https://askill.sh/submit | Web form | Blocked by parser/cache | Submission reached the parser but reported `skills/prevu/SKILL.md failed`; retry after root skill simplification or contact maintainer. |
+| AI Skill Market | https://aiskill.market/submit | Web form | Blocked by site lookup | Full multi-step form submitted, but final submit returned `GitHub repository not found. Please contact support.` |
+| Skillery | https://skillery.dev/submit | GitHub sign-in | Blocked on account authorization | Requires authorizing GitHub OAuth app; do not continue without explicit account-action approval. |
+| SkillPM | https://skillpm.dev/registry | NPM keyword indexing | Prepared | Added `agent-skill` and related discovery keywords to `@prevu/skills`; next npm publish should make it discoverable. |
+| Open Agent Skills | https://openagentskills.dev | GitHub/email | Backlog | Site asks for GitHub repository contribution; keep GitHub activity light before opening more PRs. |
 | SkillsCat | https://skills.cat | CLI/GitHub | Pending | Docs mention publishing via CLI; identify publish route. |
 | Sundial | https://www.sundialhub.com | CLI/dashboard | Pending | Docs mention `npx sundial-hub` publishing. |
 | runaskill | https://runaskill.com | GitHub/listing | Pending | Need inspect submission path. |
 | Gaia | https://gaia.tiongson.co | GitHub PR | Pending | Site mentions review batches and GitHub PRs. |
 | AgDex | https://agdex.ai | Directory submission | Pending | Agent resource directory; useful fallback if pure skill registry path is unavailable. |
-

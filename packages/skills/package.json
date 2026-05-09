@@ -11,10 +11,18 @@
   "license": "MIT",
   "keywords": [
     "skills",
+    "agent-skill",
     "agent",
+    "ai-agent",
     "claude-code",
+    "codex",
     "cursor",
-    "prevu"
+    "openclaw",
+    "prevu",
+    "preview-environments",
+    "staging-environments",
+    "devops",
+    "cli"
   ],
   "files": [
     "skills",
