@@ -1,10 +1,6 @@
 ---
 name: prevu
 description: "Use when running, configuring, or debugging the Prevu CLI (`prevu` binary) - managing staging environments, exposing ports, SSH access, API tokens, signing in, listing envs, and service commands. Mentions: prevu, prevu env, prevu auth, prevu keys, prevu.cloud, app.prevu.cloud, prevu.page, PREVU_TOKEN, staging environment for coding agents."
-metadata:
-  requires:
-    bins: ["prevu"]
-  cliHelp: "prevu --help"
 ---
 
 # Prevu CLI

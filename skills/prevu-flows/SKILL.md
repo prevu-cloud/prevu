@@ -1,11 +1,6 @@
 ---
 name: prevu-flows
 description: "Use when the user wants to mirror their local dev to a Prevu environment so they can preview changes from their phone while AFK, or when they want to share an in-progress branch as a public preview URL for a teammate, designer, or PM. Mentions: AFK, mobile preview, phone preview, mirror dev, share preview, preview URL, prevu.page, drive from mobile, review on phone, send a teammate a preview, share WIP branch."
-metadata:
-  requires:
-    bins: ["prevu", "git"]
-    skills: ["prevu"]
-  cliHelp: "prevu env --help"
 ---
 
 # Prevu - Workflow Flows
