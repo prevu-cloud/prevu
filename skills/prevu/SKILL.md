@@ -1,11 +1,11 @@
 ---
 name: prevu
-description: "Use when running, configuring, or debugging the Prevu CLI (`prevu` binary) - managing staging environments, exposing ports, SSH access, API tokens, signing in, listing envs, and service commands. Mentions: prevu, prevu env, prevu auth, prevu keys, prevu.cloud, app.prevu.cloud, prevu.page, PREVU_TOKEN, staging environment for coding agents."
+description: "Use when running, configuring, or debugging the Prevu CLI (`prevu` binary) - managing preview environments, exposing ports, SSH access, API tokens, signing in, listing envs, and service commands. Mentions: prevu, prevu env, prevu auth, prevu keys, prevu.cloud, app.prevu.cloud, prevu.page, PREVU_TOKEN, preview environments for coding agents."
 ---
 
 # Prevu CLI
 
-Prevu provisions a persistent Linux VM you can SSH into, expose ports from, and reach via a public URL. The `prevu` CLI is the supported surface (no `infrastructure tools`).
+Prevu provisions a persistent Linux VM preview environment you can SSH into, expose ports from, and reach via a public URL. The `prevu` CLI is the supported surface (no `infrastructure tools`).
 
 This skill is the **reference**: install, command map, output contract, exit codes, with deeper detail in `references/*.md`. For the multi-step user-facing workflows (mirroring local dev to a phone-reviewable preview, sharing a WIP branch), see the **`prevu-flows`** skill - load it when the user describes a scenario rather than a single command.
 
@@ -92,6 +92,19 @@ esac
 5. **Use `env service` for long-running app processes.** Don't hand-write `nohup`, PID files, or broad `pkill -f` commands.
 6. **The CLI/API is the only supported surface.** Don't try to `infrastructure tools` at it.
 
+## Safety boundaries and declared capabilities
+
+This skill can guide an agent to run shell commands, read project files, write service definitions through `prevu env service`, access the network through the Prevu API, and open SSH sessions into user-selected Prevu environments.
+
+Safety rules:
+
+1. Do not read, print, upload, or store secrets except the Prevu token needed for authentication.
+2. Do not paste tokens into chat or logs. Prefer `prevu auth login`, `PREVU_TOKEN`, or `--token` as documented.
+3. Do not destroy environments, unexpose URLs, stop services, or modify remote state unless the user asked for that action.
+4. Do not run broad destructive shell commands such as recursive deletes, hard resets, or blanket process kills.
+5. Do not install global packages other than `@prevu/cli` unless the user or project documentation requires it.
+6. Keep command output focused on env slug, service status, logs, and public preview URLs.
+
 ## When to load deeper detail
 
 - `references/auth.md` - sign-in flows, where the token lives, recovering from exit code 3.
@@ -103,7 +116,7 @@ esac
 ## When NOT to load this skill
 
 - Pure local file edits or read-only repo work - Prevu is for *running* code remotely.
-- Production deploys / CI - Prevu is staging.
+- Production deploys / CI - Prevu is for preview environments before production.
 - Anything where the user explicitly said "stay on my laptop."
 
 ## Workflow scenarios live in `prevu-flows`

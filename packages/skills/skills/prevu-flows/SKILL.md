@@ -56,7 +56,7 @@ The shape of the flow is shorter than mirror-dev: provision (or reuse) -> push t
 | "Going AFK / keep coding / drive from mobile"       | Flow A (mirror-dev)  |
 | "Show / share / send" + a person or audience        | Flow B (share-preview)|
 | "Just create a Prevu env" with no further intent    | The `prevu` skill - `env create` is enough |
-| "Deploy" / "production"                             | Neither - Prevu is staging |
+| "Deploy" / "production"                             | Neither - Prevu is for preview environments before production |
 
 ## Common ground (loaded with either flow)
 
@@ -76,6 +76,16 @@ Both flows assume:
 - **Flow B**: when the URL is in the user's hands. You're done unless the user asks you to clean up the preview.
 
 In neither flow do you `destroy` without explicit consent. That's the most common agent mistake against Prevu's persistence model.
+
+## Safety boundaries
+
+These flows can guide an agent to commit, push, run remote commands, start services, expose public HTTPS URLs, and share links with humans. Keep the blast radius narrow:
+
+1. Do not push, deploy, or share a URL until the user has asked for that workflow.
+2. Do not expose private apps, admin panels, or secret-bearing services without explicit confirmation.
+3. Do not destroy environments or stop shared services without explicit confirmation.
+4. Do not copy local secrets into the Prevu environment unless project documentation requires it and the user agreed.
+5. For Flow A, edit only in the user's local checkout; the Prevu environment is the preview target.
 
 ## Token-cost notes
 
