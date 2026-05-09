@@ -36,6 +36,7 @@ Avoid calling Prevu "just staging URLs". The core category is preview environmen
 - `comment-reply-bank.md`: replies for common objections and launch-thread questions.
 - `directory-followups.md`: support messages for failed directory submissions.
 - `outreach-list.md`: communities, creator notes, and cadence.
+- `no-login-promotion-playbook.md`: promotion steps that avoid GitHub/OAuth authorization and personal-account posting.
 - `visual-briefs.md`: social card, blog hero, diagram, and GIF directions.
 - `assets/prevu-social-card.svg`: reusable social card.
 
@@ -43,5 +44,10 @@ Avoid calling Prevu "just staging URLs". The core category is preview environmen
 
 - Live on Awesome Skills Directory: https://www.awesomeskills.dev/en/skill/prevu-prevu
 - Live/indexed on AgentSkills.in.
-- Submitted to SkillKit, Skills.re, forAgents.dev.
+- Submitted to SkillKit, Skills.re, forAgents.dev, and Agent Skill Source.
+- AgentVerus security report: https://agentverus.ai/skill/7e66eafe-e613-4e95-913c-9442614377d8
 - PRs submitted to AbsolutelySkilled and block/agent-skills.
+
+## Account-safety note
+
+Keep GitHub and OAuth activity low-volume. Directory pages that require GitHub or Google authorization should wait for a dedicated account decision instead of using the maintainer's personal account interactively.

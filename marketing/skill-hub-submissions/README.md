@@ -76,12 +76,17 @@ npx skills add prevu-cloud/prevu -a claude-code
 | agentskill.sh | https://agentskill.sh/submit | Repo import | Rate-limited | Repo import attempted; page returned `Too many submissions. Please try again in an hour.` Google sign-in was not authorized. |
 | OmniSkill Registry | https://omniskill.online | Repo import | Blocked by site API | Repo import attempted; page returned `Network error: Unexpected non-whitespace character after JSON at position 4`. |
 | AgentVerus | https://agentverus.ai/skill/7e66eafe-e613-4e95-913c-9442614377d8 | Security scan | Listed with report | Direct `skills/prevu/SKILL.md` scan created a trust report with score 87 conditional after explicit safety boundaries were added. |
+| mdskills.ai | https://mdskills.ai/submit | Auth-gated form | Blocked on account authorization | Submit redirects to sign-in with GitHub, Google, or email; do not continue without a dedicated account decision. |
+| Agent Skill Source | https://agentskillsource.com/submit | Web form | Submitted for review | Form submitted as `Prevu Preview Environments`; page confirmed `Submission Received!` and review-by-email flow. |
+| skillz.directory | https://www.skillz.directory/submit | Web form | Blocked by email validator | Full form was ready, but the page rejected `hello@prevu.cloud` as invalid; avoid using a personal email just to bypass the validator. |
 | SkillsMD | https://skillsmd.dev | Web form + API | Blocked by site lookup | Form and direct API both returned `GitHub repo not found: prevu-cloud/prevu`, despite GitHub API returning 200. |
 | askill | https://askill.sh/submit | Web form | Blocked by parser/cache | Submission reached the parser but reported `skills/prevu/SKILL.md failed`; retry after root skill simplification or contact maintainer. |
 | AI Skill Market | https://aiskill.market/submit | Web form | Blocked by site lookup | Full multi-step form submitted, but final submit returned `GitHub repository not found. Please contact support.` |
 | Skillery | https://skillery.dev/submit | GitHub sign-in | Blocked on account authorization | Requires authorizing GitHub OAuth app; do not continue without explicit account-action approval. |
 | SkillPM | https://skillpm.dev/registry | NPM keyword indexing | Prepared | Added `agent-skill` and related discovery keywords to `@prevu/skills`; next npm publish should make it discoverable. |
 | Open Agent Skills | https://openagentskills.dev | GitHub/email | Backlog | Site asks for GitHub repository contribution; keep GitHub activity light before opening more PRs. |
+| Machina | https://machina.directory | GitHub-auth form | Backlog | Directory has an explicit submit flow, but requires GitHub login; defer until account-rate risk is lower. |
+| skillsdir.dev | https://skillsdir.dev/add | GitHub issue / CLI | Backlog | Submission is via GitHub issue or `skill publish`; defer further GitHub activity for now. |
 | SkillsCat | https://skills.cat | CLI/GitHub | Pending | Docs mention publishing via CLI; identify publish route. |
 | Sundial | https://www.sundialhub.com | CLI/dashboard | Pending | Docs mention `npx sundial-hub` publishing. |
 | runaskill | https://runaskill.com | GitHub/listing | Pending | Need inspect submission path. |

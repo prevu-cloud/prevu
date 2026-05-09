@@ -8,6 +8,11 @@ Use this list after the initial skill-hub submissions. Keep outreach personal an
 - askill: ask why `skills/prevu/SKILL.md` failed after validation.
 - AI Skill Market: report `GitHub repository not found` on final submit.
 - AgenticSkills: report `Submission review queue is not configured`.
+- OmniSkill Registry: report the JSON parse error from repo import.
+- skillz.directory: report that `hello@prevu.cloud` is rejected by the email validator.
+- Agent Skill Source: wait for review email for the `Prevu Preview Environments` submission.
+- Machina: submit later only with an approved GitHub login path.
+- skillsdir.dev: use the GitHub issue template or `skill publish` only after deciding to resume GitHub-based submissions.
 
 ## Communities
 
@@ -16,6 +21,8 @@ Use this list after the initial skill-hub submissions. Keep outreach personal an
 - Cursor communities: emphasize "share WIP UI changes without deploys".
 - OpenHands / OpenClaw communities: emphasize portable `SKILL.md` support and CLI workflows.
 - DevOps communities: emphasize VM-backed preview environments instead of local tunnels.
+- Build-in-public communities: focus on "preview environments are the missing review surface for coding agents".
+- Founder/tooling communities: focus on the pain that agents can edit code faster than humans can safely review running behavior.
 
 ## Creator notes
 
@@ -32,4 +39,3 @@ https://github.com/prevu-cloud/prevu
 - Day 2: publish technical article with screenshots.
 - Day 3: share a short video/GIF of the flow.
 - Day 5: follow up with maintainers of broken submission forms.
-
