@@ -75,7 +75,7 @@ npx skills add prevu-cloud/prevu -a claude-code
 | AgenticSkills | https://agenticskills.io/submit | Web form | Blocked by site config | Full form submitted, but the page returned `Submission review queue is not configured.` |
 | agentskill.sh | https://agentskill.sh/submit | Repo import | Rate-limited | Repo import attempted; page returned `Too many submissions. Please try again in an hour.` Google sign-in was not authorized. |
 | OmniSkill Registry | https://omniskill.online | Repo import | Blocked by site API | Repo import attempted; page returned `Network error: Unexpected non-whitespace character after JSON at position 4`. |
-| AgentVerus | https://agentverus.ai/skill/f38400fa-f9cd-4c5c-971f-181e0e4ba21b | Security scan | Listed with report | Direct `skills/prevu/SKILL.md` scan created a trust report with score 85 conditional; skill docs were updated with explicit safety boundaries afterward. |
+| AgentVerus | https://agentverus.ai/skill/7e66eafe-e613-4e95-913c-9442614377d8 | Security scan | Listed with report | Direct `skills/prevu/SKILL.md` scan created a trust report with score 87 conditional after explicit safety boundaries were added. |
 | SkillsMD | https://skillsmd.dev | Web form + API | Blocked by site lookup | Form and direct API both returned `GitHub repo not found: prevu-cloud/prevu`, despite GitHub API returning 200. |
 | askill | https://askill.sh/submit | Web form | Blocked by parser/cache | Submission reached the parser but reported `skills/prevu/SKILL.md failed`; retry after root skill simplification or contact maintainer. |
 | AI Skill Market | https://aiskill.market/submit | Web form | Blocked by site lookup | Full multi-step form submitted, but final submit returned `GitHub repository not found. Please contact support.` |
