@@ -102,3 +102,101 @@ https://prevu.cloud
 
 Could you check whether the submission backend is enabled?
 
+## skillz.directory
+
+Subject:
+
+Prevu submission email validation rejects hello@prevu.cloud
+
+Body:
+
+Hi,
+
+I tried submitting Prevu to skillz.directory, but the form rejected:
+
+`hello@prevu.cloud`
+
+as an invalid email address. The address is valid and is the best contact for Prevu directory submissions.
+
+Repo:
+
+https://github.com/prevu-cloud/prevu
+
+Website:
+
+https://prevu.cloud
+
+Could you check whether the email validator is rejecting newer or longer TLDs?
+
+## ToolHunter
+
+Subject:
+
+Prevu submission prepared, blocked by CAPTCHA
+
+Body:
+
+Hi,
+
+I prepared a ToolHunter submission for Prevu, but final submit requires reCAPTCHA. I did not want to automate or bypass that step.
+
+Submission details:
+
+- Name: Prevu
+- Repo: https://github.com/prevu-cloud/prevu
+- Description: Prevu gives coding agents VM-backed preview environments with SSH, logs, services, and public HTTPS URLs so humans can review running software before production.
+
+Could you add it manually, or let me know the preferred non-automated submission path?
+
+## productdirs
+
+Subject:
+
+Prevu submission requires Google sign-in
+
+Body:
+
+Hi,
+
+I tried submitting Prevu to productdirs, but the submit flow redirects to Google sign-in and says email sign-in is temporarily disabled.
+
+Repo:
+
+https://github.com/prevu-cloud/prevu
+
+Website:
+
+https://prevu.cloud
+
+Prevu is a developer tool for AI coding workflows: VM-backed preview environments, public HTTPS review URLs, SSH, logs, and portable agent skills.
+
+Is there a brand-account-safe email submission path?
+
+## FindAIDir
+
+Subject:
+
+FindAIDir category validation blocks Prevu submission
+
+Body:
+
+Hi,
+
+I tried submitting Prevu to FindAIDir. The form accepted the product details, website, tags, contact name, and email, but final submit returned:
+
+`Category is invalid.`
+
+I tried visible category-style values including:
+
+- ai agents
+- Productivity
+- Other
+
+The submission details were:
+
+- Tool: Prevu
+- Website: https://prevu.cloud
+- Contact: hello@prevu.cloud
+- Description: Prevu gives coding agents VM-backed preview environments with SSH, logs, services, and public HTTPS URLs so humans can review running software before production.
+
+Could you share the accepted category value for developer tools or AI agents?

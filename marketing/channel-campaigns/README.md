@@ -34,9 +34,14 @@ Avoid calling Prevu "just staging URLs". The core category is preview environmen
 - `social-posts.md`: X, LinkedIn, Discord, and Slack copy.
 - `technical-article.md`: long-form article draft.
 - `comment-reply-bank.md`: replies for common objections and launch-thread questions.
+- `community-execution-plan.md`: account-safe publishing sequence for the first week.
+- `directory-candidate-radar.md`: next directory targets ranked by fit and account risk.
 - `directory-followups.md`: support messages for failed directory submissions.
+- `email-submission-drafts.md`: ready-to-send directory emails for an approved brand mailbox.
 - `outreach-list.md`: communities, creator notes, and cadence.
 - `no-login-promotion-playbook.md`: promotion steps that avoid GitHub/OAuth authorization and personal-account posting.
+- `publish-ready-article.md`: Dev.to/Medium-ready article with image slots and CTAs.
+- `submission-field-bank.md`: reusable directory/form fields for future submissions.
 - `visual-briefs.md`: social card, blog hero, diagram, and GIF directions.
 - `assets/prevu-social-card.svg`: reusable social card.
 
@@ -44,7 +49,7 @@ Avoid calling Prevu "just staging URLs". The core category is preview environmen
 
 - Live on Awesome Skills Directory: https://www.awesomeskills.dev/en/skill/prevu-prevu
 - Live/indexed on AgentSkills.in.
-- Submitted to SkillKit, Skills.re, forAgents.dev, and Agent Skill Source.
+- Submitted to SkillKit, Skills.re, forAgents.dev, Agent Skill Source, and CLIHunt.
 - AgentVerus security report: https://agentverus.ai/skill/7e66eafe-e613-4e95-913c-9442614377d8
 - PRs submitted to AbsolutelySkilled and block/agent-skills.
 

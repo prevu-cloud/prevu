@@ -10,8 +10,13 @@ Use this list after the initial skill-hub submissions. Keep outreach personal an
 - AgenticSkills: report `Submission review queue is not configured`.
 - OmniSkill Registry: report the JSON parse error from repo import.
 - skillz.directory: report that `hello@prevu.cloud` is rejected by the email validator.
+- ToolHunter: submit manually later because the prepared form is blocked by reCAPTCHA.
+- AgentDepot: send the prepared email submission from an approved brand mailbox.
+- FindAIDir: report that the category field rejects visible category names during submission.
 - Agent Skill Source: wait for review email for the `Prevu Preview Environments` submission.
 - Machina: submit later only with an approved GitHub login path.
+- Launch AI Jam: submit later only with an approved brand account.
+- productdirs: submit later only with an approved brand Google account; email sign-in is currently disabled.
 - skillsdir.dev: use the GitHub issue template or `skill publish` only after deciding to resume GitHub-based submissions.
 
 ## Communities
