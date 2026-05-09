@@ -28,10 +28,20 @@ Avoid calling Prevu "just staging URLs". The core category is preview environmen
 4. Direct community replies in Claude Code, Codex, Cursor, OpenHands, OpenClaw, and AI-agent groups.
 5. Newsletter and creator outreach with the skill-hub links.
 
+## Files
+
+- `launch-posts.md`: HN, Reddit, Dev.to/Medium, and Product Hunt launch copy.
+- `social-posts.md`: X, LinkedIn, Discord, and Slack copy.
+- `technical-article.md`: long-form article draft.
+- `comment-reply-bank.md`: replies for common objections and launch-thread questions.
+- `directory-followups.md`: support messages for failed directory submissions.
+- `outreach-list.md`: communities, creator notes, and cadence.
+- `visual-briefs.md`: social card, blog hero, diagram, and GIF directions.
+- `assets/prevu-social-card.svg`: reusable social card.
+
 ## Current skill-hub proof points
 
 - Live on Awesome Skills Directory: https://www.awesomeskills.dev/en/skill/prevu-prevu
 - Live/indexed on AgentSkills.in.
 - Submitted to SkillKit, Skills.re, forAgents.dev.
 - PRs submitted to AbsolutelySkilled and block/agent-skills.
-
